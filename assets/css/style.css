@@ -1,0 +1,55 @@
+body {
+	background: url("../img/d3-01.jpg");
+	width: 100%;
+	max-width: 1000px;
+	height: 100%;
+	max-height: 500px;
+}
+
+h1 {
+	color: #ffffff;
+  font-family: 'Kaushan Script', sans-serif;
+	font-size: 48px;
+	z-index: 1;
+}
+
+
+.container {
+  /*background: #272C46;*/
+  background: url("../img/d3-05.png");
+  position: relative;
+  width: 980px;
+  max-height: auto;
+  top: calc(50% - 175px);
+  left: calc(50% - 125px);
+  margin-top: 150px; 
+  /*background: inherit;*/
+  border-radius: 2px;
+  overflow: hidden;
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+
+#push {
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+}
+
+
+button {
+  z-index: 1; 
+}
+
+
+#gifs-appear-here {
+  position: relative;
+  z-index: 1;
+}
+
+
+#gif-form {
+  color: #ffffff;
+}
