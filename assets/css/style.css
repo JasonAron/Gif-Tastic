@@ -8,7 +8,7 @@ body {
 
 @font-face {
   font-family: MyKaushanScript;
-  src: local("../Fonts/KaushanScript-Regular.otf"),
+  src: url("../Fonts/KaushanScript-Regular.otf"),
 }
 
 h1 {
