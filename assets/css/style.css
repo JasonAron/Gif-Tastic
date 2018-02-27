@@ -6,6 +6,11 @@ body {
 	max-height: 500px;
 }
 
+@font-face {
+  font-family: MyKaushanScript;
+  src: local("KaushanScript-Regular.otf"),
+}
+
 h1 {
 	color: #ffffff;
   font-family: 'Kaushan Script', sans-serif;
