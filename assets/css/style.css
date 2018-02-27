@@ -6,9 +6,11 @@ body {
 	max-height: 500px;
 }
 
+
+
 @font-face {
-  font-family: "Kaushan Script";
-  src: url("../Fonts/KaushanScript-Regular.otf") format("otf");
+    font-family: KaushanScript;
+    src: url("../fonts/KaushanScript-Regular.otf") format("opentype");
 }
 
 h1 {
