@@ -1,14 +1,13 @@
 //============================
 //---- Giphtastic l(^_^l) ----
 //============================
-// $(document).ready(function() {
-// var topics = ["chan wook park", "wes anderson", "quinton tarantino", "guillermo del toro", "hayao miyazaki", "jean pierre jeunet", "thomas alfredson", "denis villeneuve"]; 
-// function diplayGifs() {
-
-// import $ from 'jquery';
-
+//---- Array of Directors ----
+//============================
 var topics = ["chan wook park", "wes anderson", "quinton tarantino", "guillermo del toro", "hayao miyazaki", "jean pierre jeunet", "denis villeneuve"]; 
 
+//========================
+//---- Create Buttons ----
+//========================
 $(function() {
     makeButtons();
 });
@@ -23,7 +22,8 @@ function makeButtons() {
     }
 }
 
-$('#add-gif').click( function(e) {
+
+$('#add-gif').click(function(e) {
     e.preventDefault();
     
     var newButton = $('#gif-input').val();
@@ -35,6 +35,9 @@ $('#add-gif').click( function(e) {
     $('#gif-input').val("");
 });
 
+//============================
+//---- On click ajax call ----
+//============================
 $(".container").on("click", "button", function() {
   $("#gifs-appear-here").empty();
 
@@ -53,7 +56,7 @@ $(".container").on("click", "button", function() {
 
       for (var i = 0; i < results.length; i++) {
 
-        // if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
+
           var gifDiv = $("<div class='item'>")
               gifDiv.css("z-index", "1")
           var rating = results[i].rating;
@@ -72,12 +75,13 @@ $(".container").on("click", "button", function() {
           gifDiv.append(personImage);
 
           $("#gifs-appear-here").prepend(gifDiv);
-        // }
       }
     });
 });
 
-
+//===========================
+//---- Start & Stop Gifs ----
+//===========================
 $('.container').on("click", "img", function() {
     var still = $(this).attr("data-still");
     var animated = $(this).attr("data-animated")
