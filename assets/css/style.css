@@ -7,13 +7,13 @@ body {
 }
 
 @font-face {
-  font-family: "MyKaushanScript";
-  src: url("../Fonts/KaushanScript-Regular.otf"),
+  font-family: "Kaushan Script";
+  src: url("../Fonts/KaushanScript-Regular.otf") format("otf");
 }
 
 h1 {
 	color: #ffffff;
-  font-family: 'Kaushan Script', sans-serif;
+  font-family: "Kaushan Script", sans-serif;
 	font-size: 48px;
 	z-index: 1;
 }
