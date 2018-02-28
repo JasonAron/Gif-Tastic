@@ -1,9 +1,9 @@
 //============================
-//---- Giphtastic l(^_^l) ----
+//---- Giftastic l(^_^l) ----
 //============================
 //---- Array of Directors ----
 //============================
-var topics = ["chan wook park", "wes anderson", "quinton tarantino", "guillermo del toro", "hayao miyazaki", "jean pierre jeunet", "denis villeneuve"]; 
+var topics = ["chan wook park", "wes anderson", "quinton tarantino", "guillermo del toro", "hayao miyazaki", "jean pierre jeunet", "denis villeneuve"];
 
 //========================
 //---- Create Buttons ----
@@ -25,11 +25,11 @@ function makeButtons() {
 
 $('#add-gif').click(function(e) {
     e.preventDefault();
-    
+
     var newButton = $('#gif-input').val();
-    
+
     console.log(newButton);
-    
+
     topics.push(newButton);
     makeButtons();
     $('#gif-input').val("");
@@ -63,7 +63,7 @@ $(".container").on("click", "button", function() {
 
           var p = $("<p>").text("Rating: " + rating);
           p.css("color", "#ffffff");
-          
+
           var personImage = $("<img>");
 
           personImage.attr("src", results[i].images.fixed_height_still.url);
@@ -86,7 +86,7 @@ $('.container').on("click", "img", function() {
     var still = $(this).attr("data-still");
     var animated = $(this).attr("data-animated")
     var isAnimated = $(this).attr("data-is-animated");
-    
+
     if (isAnimated === "animated") {
        // make it a still image
         $(this).attr("src", still);
@@ -96,7 +96,7 @@ $('.container').on("click", "img", function() {
         $(this).attr("src", animated);
         $(this).attr("data-is-animated", "animated");
     }
-    
+
 });
 
 

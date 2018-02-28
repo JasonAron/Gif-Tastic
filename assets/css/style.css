@@ -1,43 +1,30 @@
 body {
-	background: url("../img/d3-01.jpg");
-	width: 100%;
-	max-width: 1000px;
-	height: 100%;
-	max-height: 500px;
+  background: url("../img/d3-01.jpg");
 }
 
-
-
 @font-face {
-    font-family: KaushanScript;
-    src: url("../fonts/KaushanScript-Regular.otf") format("opentype");
+  font-family: KaushanScript;
+  src: url("../fonts/KaushanScript-Regular.otf") format("opentype");
 }
 
 h1 {
-	color: #ffffff;
-  font-family: "Kaushan Script", sans-serif;
-	font-size: 48px;
-	z-index: 1;
+  color: #ffffff;
+  font-family: "KaushanScript", sans-serif;
+  font-size: 48px;
+  z-index: 1;
 }
-
 
 .container {
   /*background: #272C46;*/
   background: url("../img/d3-05.png");
-  position: relative;
-  width: 980px;
-  max-height: auto;
-  top: calc(50% - 175px);
-  left: calc(50% - 125px);
-  margin-top: 150px; 
-  /*background: inherit;*/
-  border-radius: 2px;
-  overflow: hidden;
-  padding: 20px;
-  display: inline-block;
+  width: 100%;
+  max-width:980px;
+  margin: auto;
+  clear: both;
   text-align: center;
+  align-self: center;
+  margin-top: 100px;
 }
-
 
 #push {
   text-align: center;
@@ -45,18 +32,25 @@ h1 {
   color: #ffffff;
 }
 
-
 #buttons {
-  z-index: 1; 
+  z-index: 1;
 }
-
 
 #gifs-appear-here {
   position: relative;
   z-index: 1;
 }
 
-
 #gif-form {
   color: #ffffff;
 }
+
+@media only screen and (max-width: 980px) {
+
+};
+@media only screen and (max-width: 768px) {
+
+};
+@media only screen and (max-width: 640px) {
+
+};
