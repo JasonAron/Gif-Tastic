@@ -2,17 +2,29 @@ body {
   background: url("../img/d3-01.jpg");
 }
 
-@font-face {
-  font-family: KaushanScript;
-  src: url("../fonts/KaushanScript-Regular.otf") format("opentype");
-}
-
 h1 {
   color: #ffffff;
-  font-family: "KaushanScript", sans-serif;
+  font-family: 'Kaushan Script', cursive !important;
   font-size: 48px;
   z-index: 1;
 }
+
+button {
+  background: transparent;
+  border: solid 1px white;
+  color: white;
+  font-size:8px;
+  width:180px;
+  margin: 10px !important;
+  overflow: hidden;
+  outline: none;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.404) !important;
+}
+
+
 
 .container {
   /*background: #272C46;*/
@@ -43,6 +55,7 @@ h1 {
 
 #gif-form {
   color: #ffffff;
+
 }
 
 @media only screen and (max-width: 980px) {
